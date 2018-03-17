@@ -1,0 +1,12 @@
+{
+    "Identity": [
+        { 
+            "id": 0,
+            "BusinessPlanId": 1,
+            "Name": "ΑΠΘ",
+            "Date": 20180108,
+            "LegalForm": "Α.Ε.",
+            "OrderOfBusiness": "Πανεπιστημιο"
+        }
+    ] 
+}
