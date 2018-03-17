@@ -1,12 +1,286 @@
 {
-    "Identity": [
+    "identity": [
         { 
-            "id": 0,
+            "id": 1,
             "BusinessPlanId": 1,
             "Name": "ΑΠΘ",
             "Date": 20180108,
             "LegalForm": "Α.Ε.",
             "OrderOfBusiness": "Πανεπιστημιο"
         }
-    ] 
+    ],
+    "client": [
+        {
+            "id": 1,
+            "IdentityId": 1,
+            "Name": "client 1"
+        }
+    ],
+    "identityClient": [
+        {
+            "id": 1,
+            "BusinessPlanId": 2,
+            "Name": "identity 2",
+            "Date": 312012,
+            "LegalForm": "legal form 2",
+            "OrderOfBusiness": "order of business 2",
+            "Clients": [
+                {
+                    "ID": 2,
+                    "IdentityId": 2,
+                    "Name": "client 3"
+                },
+                {
+                    "ID": 4,
+                    "IdentityId": 2,
+                    "Name": "client 4"
+                }
+            ]
+        }
+    ],
+
+    "description": [
+        {
+            "id": 1,
+            "IdentityId": 1,
+            "Text": "description 1"
+        }
+    ],
+
+    "manager": [
+        {
+            "id": 1,
+            "BusinessPlanId": 3,
+            "Name": "manager 3",
+            "Surname": "manager surname 3",
+            "Job": "job 3",
+            "LinkedIn": "linked 3"
+        }
+    ],
+
+    "employee": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "Job": "job 1"
+        }
+    ],
+
+    "partner": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "Name": "partner 1",
+            "SurName": "partner surname 1",
+            "Expertise": "expertise 1",
+            "LinkedIn": "linked 1",
+            "From": 1112018,
+            "Until": 1012018,
+            "Duties": "duty 1"
+        }
+    ],
+
+    "employeeSalary": [
+        {
+            "EmployeeID": 1,
+            "Salary": 4321,
+            "Bonus": 322,
+            "Employment_type": "employ type 1"
+        }
+    ],
+
+    "facility": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "Adress": "address 1",
+            "Usage": "some usage 1",
+            "M2": 43214,
+            "Ownership_type": "type 1",
+            "Start_date": 1012018
+        }
+    ],
+
+    "Equipment": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "EquipType": "equipment type 1",
+            "Address": "address 1",
+            "Division": "div 1",
+            "Firsthand": 1,
+            "Acquisition_date": 1051967
+        }
+    ],
+
+    "facilityCosts": [
+        {
+            "FacultyId": 1,
+            "Cost": 55252
+        },
+        {
+            "FacultyId": 2,
+            "Cost": 321354
+        },
+        {
+            "FacultyId": 3,
+            "Cost": 654321
+        }
+    ],
+    
+    "EquipmentCosts": [ 
+        {
+            "EquipmentId": 1,
+            "Cost": 321321
+        },
+        {
+            "EquipmentId": 2,
+            "Cost": 123456
+        },
+        {
+            "EquipmentId": 3,
+            "Cost": 3321
+        }
+    ],
+
+    "product": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "ProductType": false,
+            "Name": "service 1",
+            "Directed_to": "dir1",
+            "Innovation_factor": "fac1",
+            "Technology": "tec1",
+            "License": "lic1",
+            "Competition": "comp1",
+            "Price": 321,
+            "Description": "desc1",
+            "Copyright": "cpr1",
+            "Certificate": null,
+            "ProductCost": 44,
+            "NumProduct": 1,
+            "PercentageIncome": 50
+        }
+    ],
+
+    "swot": [
+        {
+            "Strong": [
+                "strong 1",
+                "strong 2",
+                "strong 3"
+                ],
+            "Weak": [
+                "weak 1",
+                "weak 2",
+                "weak 3"
+            ],
+            "Opportunities": [
+                "opportunity 1",
+                "opportunity 2",
+                "opportunity 3"
+            ],
+            "Threats": [
+                "threat 1",
+                "threat 2",
+                "threat 3"
+            ],
+            "BusinessPlanId": 1
+        }
+    ],
+
+    "factor": [
+        {
+            "BusinessPlanId": 1,
+            "Description": "pestel 1",
+            "Example": "example 1"
+        }
+    ],
+
+    "note": [
+        {
+            "BusinessPlanId": 1,
+            "Text": "note 1"
+        }
+    ],
+
+    "strategy": [
+        {
+            "BusinessPlanId": 1,
+            "Promotion": "promo 1",
+            "Contribution": "contribution 1",
+            "MarketEntry": "entry 1",
+            "PublicRelations": "relation 1",
+            "Avoid": "avoidance 1"
+        }
+    ],
+
+    "marketingAction": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "Title": "marketing action 1",
+            "ImplementationTime": 12351,
+            "Frequency": 32,
+            "ImplementationCost": 43214,
+            "TotalCost": "904358"
+        }
+    ],
+
+    "startAction": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "Name": "action 1",
+            "ActionCost": 3218
+        }
+    ],
+
+    "functions": [
+        {
+            "ID": 1,
+            "BusinessPlanId": 1,
+            "Name": "start function 1",
+            "FunctionCost": 59592
+        },
+        {
+            "ID": 2,
+            "BusinessPlanId": 3,
+            "Name": "start function 2",
+            "FunctionCost": 292
+        },
+        {
+            "ID": 3,
+            "BusinessPlanId": 2,
+            "Name": "start function 3",
+            "FunctionCost": 59
+        }
+    ],
+    
+    "deadspot": [
+        {
+            "DeadspotID": 1,
+            "ProductID": 1,
+            "BusinessPlanId": 1,
+            "Spot": "dead1"
+        }
+    ],
+
+    "link": [
+        {
+            "id": 1,
+            "BusinessPlanId": 1,
+            "URL": "url 1",
+            "Title": "title 1",
+            "Section": "section 1"
+        }
+    ],
+    
+    "conclusion": [
+        {
+            "BussinesPlanId": 1,
+            "Text": "conclusion 1"
+        }
+    ]
 }
